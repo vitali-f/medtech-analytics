@@ -1,0 +1,23 @@
+# dbt artifacts
+target/
+dbt_packages/
+logs/
+
+# Секретные данные (ПРОФАЙЛЫ НЕЛЬЗЯ ПУШИТЬ)
+profiles.yml
+*.env
+
+# Python файлы
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+
+# Системные файлы (Windows/Mac)
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Конфиденциальные файлы
+.user.yml
