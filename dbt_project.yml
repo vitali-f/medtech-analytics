@@ -1,0 +1,5 @@
+name: 'medtech_analytics'
+version: '1.0.0'
+config-version: 2
+profile: 'medtech_profile'
+model-paths: ["models"]
