@@ -7,7 +7,7 @@ This project demonstrates an end-to-end data pipeline for processing and analyzi
 Chronic diseases (heart disease, diabetes, etc.) are the leading causes of death and disability in the US. For MedTech companies, understanding the geographic distribution and prevalence of these conditions is crucial for resource allocation, market entry, and developing targeted health interventions. This project provides a scalable pipeline to transform raw CDC health data into actionable insights.
 
 ## 🏗 Architecture Diagram
-```mermaid
+
 graph LR
     A[CDC Raw CSV] --> B[(Snowflake)]
     B --> C{dbt Core}
