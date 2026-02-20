@@ -1,5 +1,34 @@
 name: 'medtech_analytics'
 version: '1.0.0'
 config-version: 2
+
+# Имя профиля из твоего profiles.yml
 profile: 'medtech_profile'
+
+# Пути к папкам проекта
 model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+
+# Очистка временных файлов
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Настройка моделей (как они будут создаваться в Snowflake)
+models:
+  medtech_analytics:
+    # Слои данных
+    staging:
+      +materialized: view      # Бронзовый слой: создаем как представления
+      +schema: staging
+    marts:
+      +materialized: table     # Золотой слой: витрины в виде таблиц
+      +schema: core
+
+# Настройка загрузки данных через dbt seed
+seeds:
+  medtech_analytics:
+    +schema: raw_data          # Данные попадут в схему RAW_DATA
+    +quote_columns: false      # Отключаем лишние кавычки для Snowflake
