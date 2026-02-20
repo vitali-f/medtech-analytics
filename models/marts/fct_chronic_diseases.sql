@@ -7,7 +7,8 @@ with staging as (
 select
     state_name,
     disease_category,
-    avg(actual_value) as avg_value,
+    -- Применяем наш макрос для округления среднего значения
+    {{ to_percentage('avg(actual_value)') }} as avg_value,
     count(*) as total_indicators
 from staging
 group by 1, 2

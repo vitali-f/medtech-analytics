@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: stg_chronic_diseases
+    description: "Очищенные данные по хроническим заболеваниям"
+    columns:
+      - name: state_code
+        description: "Двухбуквенный код штата"
+        tests:
+          - not_null # Проверка: поле не должно быть пустым
+
+  - name: stg_locations
+    description: "Справочник уникальных локаций (штатов)"
+    columns:
+      - name: location_key
+        description: "Уникальный MD5 ключ локации"
+        tests:
+          - unique   # Проверка: ключ не должен повторяться
+          - not_null # Проверка: ключ не должен быть пустым
