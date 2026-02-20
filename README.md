@@ -3,6 +3,22 @@
 ## 📋 Project Overview
 This project demonstrates an end-to-end data pipeline for processing and analyzing US chronic disease data (CDC). It covers everything from raw data ingestion to interactive visualization, following professional Data Engineering practices.
 
+## 📌 The "Why"
+Chronic diseases (heart disease, diabetes, etc.) are the leading causes of death and disability in the US. For MedTech companies, understanding the geographic distribution and prevalence of these conditions is crucial for resource allocation, market entry, and developing targeted health interventions. This project provides a scalable pipeline to transform raw CDC health data into actionable insights.
+
+## 🏗 Architecture Diagram
+```mermaid
+graph LR
+    A[CDC Raw CSV] --> B[(Snowflake)]
+    B --> C{dbt Core}
+    C --> D[Staging Layer]
+    D --> E[Marts Layer]
+    E --> F[Looker Studio Dashboard]
+
+## 🌲 Lineage Graph
+![dbt Lineage Graph](lineage_graph.png)
+*Dependency flow showing the transformation from staging views to final analytical fact tables.*
+
 ## 🛠 Tech Stack
 - **Cloud Warehouse:** Snowflake
 - **Transformation Tool:** dbt (Data Build Tool)
