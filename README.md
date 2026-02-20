@@ -16,7 +16,7 @@ graph LR
     E --> F[Looker Studio Dashboard]
 
 ## 🌲 Lineage Graph
-![dbt Lineage Graph](lineage_graph.png)
+![dbt Lineage Graph](Lineage_Graph.png)
 *Dependency flow showing the transformation from staging views to final analytical fact tables.*
 
 ## 🛠 Tech Stack
