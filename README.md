@@ -3,17 +3,25 @@
 ## 📋 Project Overview
 This project demonstrates an end-to-end data pipeline for processing and analyzing US chronic disease data (CDC). It covers everything from raw data ingestion to interactive visualization, following professional Data Engineering practices.
 
-## 📌 The "Why"
-Chronic diseases (heart disease, diabetes, etc.) are the leading causes of death and disability in the US. For MedTech companies, understanding the geographic distribution and prevalence of these conditions is crucial for resource allocation, market entry, and developing targeted health interventions. This project provides a scalable pipeline to transform raw CDC health data into actionable insights.
+## 📌 The "Business Context"
+Chronic diseases are the leading cause of death and disability in the US. Understanding geographic distribution and prevalence is critical for:
+
+Resource Optimization: Directing medical supplies and personnel to high-risk states.
+
+Policy Making: Identifying regions that need urgent healthcare intervention.
+
+Market Analysis: Strategic planning for MedTech and pharmaceutical companies.
 
 ## 🏗 Architecture Diagram
 
+```mermaid
 graph LR
     A[CDC Raw CSV] --> B[(Snowflake)]
     B --> C{dbt Core}
     C --> D[Staging Layer]
     D --> E[Marts Layer]
     E --> F[Looker Studio Dashboard]
+```
 
 ## 🌲 Lineage Graph
 ![dbt Lineage Graph](Lineage_Graph.png)
