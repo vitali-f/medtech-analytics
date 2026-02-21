@@ -3,7 +3,7 @@
 ## 📋 Project Overview
 This project demonstrates an end-to-end data pipeline for processing and analyzing US chronic disease data (CDC). It covers everything from raw data ingestion to interactive visualization, following professional Data Engineering practices.
 
-## 📌 The "Business Context"
+## 📌 The Business Context
 Chronic diseases are the leading cause of death and disability in the US. Understanding geographic distribution and prevalence is critical for:
 
 Resource Optimization: Directing medical supplies and personnel to high-risk states.
