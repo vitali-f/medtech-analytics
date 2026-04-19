@@ -21,3 +21,12 @@ Thumbs.db
 
 # Конфиденциальные файлы
 .user.yml
+
+
+# Airflow специфичные файлы
+airflow.db
+airflow.cfg
+airflow-webserver.pid
+standalone_airflow/
+# Если решишь мапить логи Airflow в корень проекта
+/logs/
