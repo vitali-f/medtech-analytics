@@ -1,4 +1,5 @@
-# MedTech Data Engineering Project: US Chronic Disease Analytics
+# 🏥 Automated US Chronic Disease Analytics Platform
+### *End-to-End Orchestrated Data Pipeline: Airflow | dbt | Snowflake | Docker*
 
 ## 📋 Project Overview
 This project demonstrates an end-to-end data pipeline for processing and analyzing US chronic disease data (CDC). It covers everything from raw data ingestion to interactive visualization, following professional Data Engineering practices.
