@@ -73,6 +73,7 @@ The entire lifecycle is automated and monitored. The DAG manages dependencies, e
 
 ### 📊 Business Intelligence (Snowflake)
 Final analytical output showcasing the distribution of chronic disease indicators across states, processed through the dbt Core layer.
+![Snowflake Analytics](analytics_chart.png)
 
 ## 📊 Dashboard
 (https://lookerstudio.google.com/reporting/6c070843-ce79-4bf8-aa50-4b7b1ae8adec)
