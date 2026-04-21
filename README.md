@@ -65,13 +65,13 @@ Data Quality: Implemented automated tests (unique, not_null) and custom Jinja ma
 Analytics: Connected Looker Studio to Snowflake for real-time reporting.
 
 
-📈 Operational Monitoring & Analytics
-⚙️ Pipeline Orchestration (Apache Airflow)
+## 📈 Operational Monitoring & Analytics
 
+### ⚙️ Pipeline Orchestration (Apache Airflow)
 The entire lifecycle is automated and monitored. The DAG manages dependencies, ensuring dbt runs and tests are executed in the correct order.
+![Airflow DAG](airflow_dag.png)
 
-📊 Business Intelligence (Snowflake)
-
+### 📊 Business Intelligence (Snowflake)
 Final analytical output showcasing the distribution of chronic disease indicators across states, processed through the dbt Core layer.
 
 ## 📊 Dashboard
